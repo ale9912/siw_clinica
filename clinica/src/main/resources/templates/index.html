@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<link th:href="@{/css/base.css}" rel="stylesheet" />
+<title>Clinica</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+	<header th:fragment="header">
+		       
+        <nav>
+            
+            <div class="container">
+                <a href="index.html" id="logo"><img src="/images/clinica.png"></a>
+                <ul>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="chisono.html">Chi siamo</a></li>
+                    <li class="nav-item"><a href="lavoro.html">Login</a></li>
+                    <li class="nav-item"><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+       
+        </nav>
+        </header>
+        <div class="clear"></div>
+          <div id="top-section">
+            <div class="container">
+                <h1>Clinica Roma3</h1>
+                <p>Ciao! Siamo una clinica specializzata in tamponi</p>
+                <p>Accedi o Registrati per consultare i tuoi referti</p>
+                <button class="bottoni-neri">Login</button>
+                <button class="bottoni-neri">Registrati</button>
+            </div>
+        </div>
+        
+        
+        <div id='skills-section'>
+            
+            <div class="container">
+                
+                <h3>I nostri servizi</h3>
+                <div id='skills'>
+                    <div class="skill">
+                        <img src="/images/tamponer.jpg">
+                        <h4>Tampone antigenico</h4>
+                        <p>Permette di evidenziare rapidamente (30-60 min), 
+                           mediante tampone nasale,la presenza di componenti 
+                           (antigeni) del virus. 
+                        </p>
+                        <button class="bottoni-prenota">Consulta</button>
+                    </div>
+                    <div class="skill">
+                        <img src="/images/tampone1.jpg">
+                        <h4>Tampone molecolare</h4>
+                        <p>Il principale e più affidabile strumento diagnostico 
+                           è il cosiddetto tampone molecolare che permette 
+                           di rilevare il genoma (RNA) del virus SARS-Cov -2.
+                        </p>
+                    <a th:href="@{/molecolare}"><button class="bottoni-prenota">Consulta</button></a>
+                    </div>
+                    <div class="skill">
+                        <img src="/images/test.jpg">
+                        <h4>Test sierologico</h4>
+                        <p>I test sierologici servono ad individuare 
+                           tutte quelle persone che sono entrate in 
+                           contatto con il virus.
+                        </p>
+                        <button class="bottoni-prenota">Consulta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <footer>
+            <div class="container">
+                <div class="footer-section">
+                    <h5>Dove siamo?</h5>
+                    
+                </div>
+                <div class="footer-section">
+                    <h5> Contatti</h5>
+                    <p>+39 3420712501</p>
+                    <p>06 5733 2100</p>
+                    <p>clinicaroma3@siw.it</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Social</h5>
+                    <a class="social" href="https//devnews.it">Facebook</a>
+                    <a class="social" href="https//devnews.it">Twitter</a>
+                    <a class="social" href="https//devnews.it">Instagram</a>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
+	
+
+	
+	
